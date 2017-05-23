@@ -223,51 +223,51 @@ body {
   font-size: 18px;
   font-family: "moderat", sans-serif;
   transition: all .3s ease-out; }
-  .btn:hover {
-    background-color: #fff;
-    color: #e02614;
-    transition: all .3s ease-out; }
+.btn:hover {
+  background-color: #fff;
+  color: #e02614;
+  transition: all .3s ease-out; }
 
 .btn--orange {
   background-color: #EE7A23;
   border: 1px #EE7A23 solid;
   color: #fff; }
-  .btn--orange:hover {
-    background-color: #fff;
-    color: #EE7A23; }
+.btn--orange:hover {
+  background-color: #fff;
+  color: #EE7A23; }
 
 .btn--white {
   background-color: #fff;
   border: 1px #d1434a solid;
   color: #d1434a; }
-  .btn--white:hover {
-    background-color: #d1434a;
-    color: #fff; }
+.btn--white:hover {
+  background-color: #d1434a;
+  color: #fff; }
 
 .btn--red {
   background-color: #d1434a;
   border: 1px #d1434a solid;
   color: #fff; }
-  .btn--red:hover {
-    background-color: #fff;
-    color: #d1434a; }
+.btn--red:hover {
+  background-color: #fff;
+  color: #d1434a; }
 
 .btn--gray-white {
   background-color: none;
   border: 1px #605F5F solid;
   color: #605F5F; }
-  .btn--gray-white:hover {
-    background-color: #605F5F;
-    color: #fff; }
+.btn--gray-white:hover {
+  background-color: #605F5F;
+  color: #fff; }
 
 .btn--dis {
   background-color: #ccc;
   border: 1px #ccc solid;
   color: #fff;
   cursor: disabled; }
-  .btn--dis:hover {
-    background-color: #ccc;
-    color: #fff; }
+.btn--dis:hover {
+  background-color: #ccc;
+  color: #fff; }
 
 input[type="text"], textarea {
   padding: .5em 20px;
@@ -285,24 +285,24 @@ input[type="text"], textarea {
   vertical-align: middle;
   z-index: 2;
   -ms-transform: translateY(2px);
-      transform: translateY(2px);
+  transform: translateY(2px);
   transition: transform .3s ease-out; }
-  .i-up-down i {
-    position: absolute;
-    top: 0;
-    width: 8px;
-    height: 1px;
-    background: #EE7A23; }
-  .i-up-down .i-up-down-l {
-    left: 0;
-    -ms-transform: rotate(40deg);
-        transform: rotate(40deg);
-    transition: transform .3s ease-out; }
-  .i-up-down .i-up-down-r {
-    right: 0;
-    -ms-transform: rotate(-40deg);
-        transform: rotate(-40deg);
-    transition: all .3s ease-out; }
+.i-up-down i {
+  position: absolute;
+  top: 0;
+  width: 8px;
+  height: 1px;
+  background: #EE7A23; }
+.i-up-down .i-up-down-l {
+  left: 0;
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+  transition: transform .3s ease-out; }
+.i-up-down .i-up-down-r {
+  right: 0;
+  -ms-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  transition: all .3s ease-out; }
 
 .select-self {
   position: relative;
@@ -317,31 +317,31 @@ input[type="text"], textarea {
   max-width: 240px;
   height: 30px;
   line-height: 30px; }
-  .select-self-area .select-ipt {
-    display: block;
-    height: 100%;
-    padding: 0 2em 0 1em;
-    border: 0;
-    color: #605F5F;
-    overflow: hidden; }
-  .select-self-area .select-btn {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 1.286em;
-    height: 100%;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    text-align: center; }
-    .select-self-area .select-btn .i-up-down {
-      width: 8px;
-      top: 0;
-      left: 0; }
-      .select-self-area .select-btn .i-up-down i {
-        width: 5px;
-        height: 2px;
-        background-color: #605F5F; }
+.select-self-area .select-ipt {
+  display: block;
+  height: 100%;
+  padding: 0 2em 0 1em;
+  border: 0;
+  color: #605F5F;
+  overflow: hidden; }
+.select-self-area .select-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1.286em;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: center; }
+.select-self-area .select-btn .i-up-down {
+  width: 8px;
+  top: 0;
+  left: 0; }
+.select-self-area .select-btn .i-up-down i {
+  width: 5px;
+  height: 2px;
+  background-color: #605F5F; }
 
 .select-self-white .select-self-area {
   background: #fff;
@@ -363,37 +363,37 @@ input[type="text"], textarea {
   border-radius: 0 0 3px 3px;
   overflow-y: auto;
   z-index: 1; }
-  .select-options li {
-    padding: .5em 15px;
-    border-top: 1px solid #e9e9e9;
-    text-align: left; }
-    .select-options li:hover {
-      color: #EE7A23; }
+.select-options li {
+  padding: .5em 15px;
+  border-top: 1px solid #e9e9e9;
+  text-align: left; }
+.select-options li:hover {
+  color: #EE7A23; }
 
 .select-self-open {
   border-radius: 3px 3px 0 0; }
-  .select-self-open .select-options {
-    display: block; }
-  .select-self-open .i-up-down .i-up-down-l {
-    left: 0;
-    -ms-transform: rotate(-40deg);
-        transform: rotate(-40deg);
-    transition: transform .3s ease-out; }
-  .select-self-open .i-up-down .i-up-down-r {
-    right: 0;
-    -ms-transform: rotate(40deg);
-        transform: rotate(40deg);
-    transition: all .3s ease-out; }
-  .select-self-open .select-options {
-    z-index: 102; }
+.select-self-open .select-options {
+  display: block; }
+.select-self-open .i-up-down .i-up-down-l {
+  left: 0;
+  -ms-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  transition: transform .3s ease-out; }
+.select-self-open .i-up-down .i-up-down-r {
+  right: 0;
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+  transition: all .3s ease-out; }
+.select-self-open .select-options {
+  z-index: 102; }
 
 .select-self:hover, .up-down-btn:hover, .up-down-btn.open {
   transition: all .3s ease-out; }
-  .select-self:hover .i-up-down-l, .up-down-btn:hover .i-up-down-l, .up-down-btn.open .i-up-down-l {
-    -ms-transform: rotate(-40deg);
-        transform: rotate(-40deg);
-    transition: all .3s ease-out; }
-  .select-self:hover .i-up-down-r, .up-down-btn:hover .i-up-down-r, .up-down-btn.open .i-up-down-r {
-    -ms-transform: rotate(40deg);
-        transform: rotate(40deg);
-    transition: all .3s ease-out; }
+.select-self:hover .i-up-down-l, .up-down-btn:hover .i-up-down-l, .up-down-btn.open .i-up-down-l {
+  -ms-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  transition: all .3s ease-out; }
+.select-self:hover .i-up-down-r, .up-down-btn:hover .i-up-down-r, .up-down-btn.open .i-up-down-r {
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+  transition: all .3s ease-out; }
