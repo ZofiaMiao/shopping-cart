@@ -74,17 +74,17 @@
                     <img src="img/goods-1.jpg" alt="烟">
                   </div>
                   <div class="cart-item-title">
-                    <div class="item-name">黄鹤楼香烟</div>
+                    <div class="item-name"></div>
                   </div>
                   <div class="item-include">
                     <dl>
                       <dt>赠送:</dt>
-                      <dd>打火机</dd>
+                      <dd v-for="{{parts in items.parts}}" v-text="parts.partsName"></dd>
                     </dl>
                   </div>
                 </div>
                 <div class="cart-tab-2">
-                  <div class="item-price">19</div>
+                  <div class="item-price"></div>
                 </div>
                 <div class="cart-tab-3">
                   <div class="item-quantity">
@@ -161,5 +161,7 @@
   </div>
 </div>
 <script src="node_modules/vue/dist/vue.min.js"></script>
+<script src="js/lib/vue-resource.js"></script>
+<script src="js/cart.js"></script>
 </body>
 </html>
