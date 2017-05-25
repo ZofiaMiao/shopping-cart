@@ -1,7 +1,7 @@
 /**
  * Created by zofia on 17/5/23.
  */
-var vm = new Vue({
+new Vue({
     el:"#app",
     data:{
     //数据
