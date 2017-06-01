@@ -6,7 +6,8 @@ var vm = new Vue({
     data:{
     //数据
         productList:[],
-        totalMoney:0
+        totalMoney:0,
+        checkAllFlag:false
     },
     filters:{
     //局部过滤器
@@ -29,6 +30,34 @@ var vm = new Vue({
                 this.productList = res.data.result.list;
                 this.totalMoney = res.data.result.totalMoney;
             });
+        },
+        changeMoney:function (product, flag) {
+            if(flag >0){
+                product.productQuantity ++;
+            }else{
+                product.productQuantity --;
+                if(product.productQuantity < 1){
+                    product.productQuantity = 1;
+                }
+            }
+        },
+        selectProduct:function (item) {
+            if(typeof item.checked == "undefined"){
+                this.$set(item,"checked",true);
+            }else{
+                item.checked = !item.checked;
+            }
+        },
+        //全选
+        checkAll:function (flag) {
+            this.checkAllFlag = flag;
+            this.productList.forEach((item, index) =>{
+                if(typeof item.check === "undefined"){
+                    this.$set(item,"checked",flag);
+                }else{
+                    this.checked = flag;
+                }
+            })
         }
     }
 })
