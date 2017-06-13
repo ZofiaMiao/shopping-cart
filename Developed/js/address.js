@@ -5,7 +5,9 @@ new Vue({
     el:".container",
     data:{
         addressList:[],
-        limitNum:3,
+        limitNum:3,//显示多少个地址
+        currIndex:0,//当前选中的地址索引
+        shippingtype:1//配送方式
     },
     mounted:function(){
         this.$nextTick(function () {
@@ -24,8 +26,18 @@ new Vue({
                 console.log(res);
             })
         },
-        loadMore(){
-            this.limitNum = this.addressList.length
+        setDefault(addressId){
+            this.addressList.forEach(item => {
+                if(item.addressId == addressId){
+                    item.isDefault = true;
+                }else{
+                    item.isDefault = false;
+                }
+            })
+        },
+        delAddr(item){
+            var index = this.addressList.indexOf(item);
+            this.addressList.splice(index,1);
         }
     }
 })
